@@ -1,0 +1,40 @@
+//Question 1
+let a = "Today is Monday!"
+let b = 7
+//console.log(a+b)
+
+//Question 2
+//console.log("The data type of string in Q 1 is ",typeof(a+b))
+
+//Question 3
+const obj1 = {apple:"fruit", potato: "veg", lipbalm:"skincare"}
+//obj1 = 9
+//console.log(obj1.apple)
+
+//Question 4
+obj1['sapphire']="clothing brand"
+//console.log(obj1)
+
+//
+let ask= prompt("Hi, are you present today? ")
+//console.log("I am, ",ask,", today!")
+//if you want to convert string into number
+//ask=Number.parseInt(ask)
+//console.log(ask)
+//if (ask == "yes" || ask == "Yes")
+    //alert("Congratulations! Your attendence is marked!")
+//else if (ask == "No" || ask == "no")
+    //alert("Your attendence is not marked for today!")
+switch(ask)
+{
+    case "Yes":
+    case "yes":
+        console.log("Congratulations! Your attendence is marked!")
+        break;
+    case "No":
+    case "no":
+        console.log("Your attendence is not marked for today!")
+    default :
+    console.log("Invalid answer")
+}
+}

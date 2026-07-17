@@ -1,0 +1,222 @@
+const prompt = require('prompt-sync')();
+///////////////////////////////////////////////////////////////////////////////
+// Problem 1 
+//Func for mean
+/*
+const mean = (a,b,c,d) => 
+{
+return (a+b+c+d)/4
+}
+console.log(mean(1,2,3,4))
+*/
+///////////////////////////////////////////////////////////////////////////////
+// Different type String
+/*
+let hi="Sumera"
+console.log(hi.length)
+
+let hello='Sumera'
+console.log(hello.length)
+*/
+
+// Template literals (backticks for single and double quotes)
+/*
+let hello='Sumera'
+let a = `This is checking ${hello}` //string interpolation: to add a variable in the string
+console.log(a)
+*/
+/// Methods of strings
+/*
+let name ='Sumera';
+console.log(name.length);  //Property
+console.log(name.toUpperCase()); //Function
+console.log(name.toLowerCase()); //Function
+console.log(name.slice(1,4));
+console.log(name.slice(3));
+console.log(name.replace("Sum","Fai"));
+console.log(name.replace("era","zan"));
+let a = "coding"
+console.log(name.concat(" Hi I am enjoying ", a," Please don't disturb me"))
+let sentence = "     Too much stress";
+console.log(sentence.trim());
+*/
+
+// Problem 2
+/// print a string ccharacters using for loop
+/*
+let word = "Sumera";
+for (let i = 0;i<word.length;i++)
+{
+    console.log(word[i])
+}
+*/
+
+// Problem 3
+// Include function
+/*
+let w = "sam";
+let x="Hi I am sam"
+console.log(x.includes(w))
+console.log(`The word "${w}" ${x.includes(w)? 'is' : ' is not'} in the sentence`);
+*/
+
+/// Problem 4
+//startswith, endswith,function
+/*
+let text = "Hello world, welcome to the universe.";
+text.startsWith("Hello");
+console.log(`The given string : "${text}" ${text.startsWith("Hello")? " has ":" has not" }the starting word`);
+text.endsWith("universe.");
+console.log(`The given string : "${text}" ${text.endsWith("universe")? " has ":" has not" }the ending word`);
+*/
+
+// Problem 5
+// String to lowercase
+/*
+let a = prompt("Enter a string: ");
+console.log(a.toLowerCase())
+*/
+
+// Problem 6
+//change the character of a string if you can
+/*
+let a = "Sumera";
+a[1]=='F';
+console.log(a);
+*/
+
+// Problem 7
+// extract the amount from a string
+/*
+let a ="Please give Rs 1000";
+console.log(a.slice("Please give Rs".length ));
+*/
+
+// Problem 8
+//arrays
+/*
+let marks=[91,80,"NOt p", null]
+console.log(marks)
+console.log(marks.length)
+console.log(marks[3])   //change the element, add the element
+console.log(typeof(marks))
+for (i=0;i<marks.length;i++)
+{
+    console.log(marks[i])
+}
+*/
+
+// Problem 9
+// Methhods of array
+/*
+let marks=[91,80,"NOt p", null]
+console.log(marks.push(3))
+console.log(marks)
+console.log(marks.pop(3))
+console.log(marks)
+console.log(marks.shift(2))
+console.log(marks)
+console.log(marks.unshift(2))
+console.log(marks)
+*/
+
+// Problem 10
+// Array of numbers and take input from user to add numbers to this array
+/*
+let array=[2,4,7,1];
+let x = prompt("Enter a number to add in the array: ");
+x=Number.parseInt(x)
+console.log(array.push(x))
+console.log("New array is : ", array)
+*/
+
+//Problem 11
+//Keep adding numbs until 0 digit is added
+/*
+let array=[2,4,7,1];
+let x = prompt("Enter a number to add in the array: ");
+x=Number.parseInt(x)
+array.push(x)
+console.log(array)
+while (x!=0)
+{
+    x = prompt("Enter a number to add in the array: ");
+    x=Number.parseInt(x)
+    array.push(x)
+    console.log(array)
+}
+console.log("Program has finished!")
+*/
+
+//Program 12
+//Filter for nums dividible 10 from a given array
+/*
+let array=[2,10,20,4,7,10,110,23,50];
+const newarray=array.filter((x) =>
+{
+   return x%10==0 
+})
+console.log(newarray)
+*/
+
+//Program 13
+//array of squares of given nums
+/*
+let array=[2,4,7,1];
+let newarray=array.map((x) =>
+{
+ return x*x
+})
+console.log("Array of squares is: ", newarray)
+*/
+
+//Program 14
+/*
+let array=[2,4,7,1];
+let newarray=array.reduce((x,y)=>
+{
+    return x*y
+})
+console.log("Factorial is: ", newarray)
+*/
+
+//Program 15
+// Generates a random whole number
+/*
+let randomNum = Math.floor(Math.random() * 100) + 1;
+let x = Number.parseInt(prompt("Enter your guess between 1-100 including both: "));
+score=0;
+do
+{   
+    if (x >=1 && x <=100)
+    {    
+        
+        if (x==randomNum)
+        {
+            console.log("Your guess is right!");
+            
+        }
+        else if (x<randomNum)
+        {
+            console.log("Enter higher!")
+            x = Number.parseInt(prompt("Guess again: "));
+            score=score+1
+        }
+        else if (x>randomNum)
+        {
+            console.log("Enter lower!")
+            x = Number.parseInt(prompt("Guess again: "));
+            score=score+1
+        }
+    }
+    else if (x<1 || x>100)
+    {
+        x = Number.parseInt(prompt("Guess again between 1-100 only: "));
+    }}
+while (x!=randomNum)
+console.log("You have guessed it!\n",randomNum," is the right number.")
+score=100-score
+console.log("Your score is : ",score)
+
+*/
+

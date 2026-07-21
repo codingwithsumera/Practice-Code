@@ -1,0 +1,49 @@
+const prompt = require('prompt-sync')();  //Library
+
+/// Higher Order Fuction
+/*
+function x()
+{
+    console.log("I am a callback function!");
+}
+function y(x)
+{
+    x();
+    console.log("I am a higher order fuction!");
+    x();
+}
+y(x);
+
+const radius = [2,5,3,1];
+
+const diameter = function(radius)
+{
+    return radius*2
+}
+
+const general = function(radius, logic)
+{
+    const output=[];
+    for (let i = 0; i<radius.length; i++)
+    {
+        output.push(logic(radius[i]));
+    }
+    return console.log(" The is is the output: ", output)
+}
+general(radius, diameter)
+console.log(radius.map(diameter))
+*/
+
+// Settimeout
+/*
+a= setTimeout(function() {
+    console.log("I am 5 seconds late! hehe")
+}, 5000)
+ //clearTimeout(a)
+//console.log(a)
+b= setInterval(function() {
+    console.log("I am setinterval function! hehe")
+}, 2000)
+ //clearInterval(b)
+
+ */

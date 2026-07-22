@@ -1,0 +1,35 @@
+const prompt = require('prompt-sync')();  //Library
+
+
+// Creating a basic Promise
+const fetchUserData = new Promise((resolve, reject) => {
+  let success = true;
+
+  setTimeout(() => {
+    if (success) {
+      resolve({ name: "Alex", age: 26 }); // Order fulfilled
+    } else {
+      reject("Failed to fetch user data."); // Order rejected
+    }
+  }, 2000); // Simulates a 2-second network request
+});
+
+// Consuming the Promise using .then() and .catch()
+fetchUserData
+  .then((data) => console.log("Data received:", data))
+  .catch((error) => console.error("Error:", error));
+
+  // Re-writing our consumption using async/await
+async function getUser() {
+  try {
+    console.log("Fetching...");
+    // Execution pauses here until fetchUserData resolves
+    const user = await fetchUserData; 
+    console.log("User retrieved:", user.name);
+  } catch (error) {
+    // If the Promise rejects, it jumps straight to catch
+    console.error("Caught error:", error); 
+  }
+}
+
+getUser();

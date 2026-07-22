@@ -1,0 +1,15 @@
+const prompt = require('prompt-sync')();  //Library
+
+console.log("1: Start");
+
+setTimeout(function () {
+  console.log("2: Timer Done");
+}, 000);
+
+console.log("BYE");
+console.log("BYE");
+console.log("BYE");
+console.log("3: End");
+console.log("3: End");
+console.log("BYE");
+console.log("BYE");

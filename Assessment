@@ -1,0 +1,122 @@
+const prompt = require('prompt-sync')();  //Library
+
+// -------------------------------------------------------------
+
+// Part 1
+
+function generateId(idnum)
+{
+   
+let id = 0
+
+return function(){
+    id= id++
+    return id
+}
+
+}
+const createid = generateId()
+let students = 
+[ 
+    { id : 1 , name :"Sumera", marks : [23,56,34]},
+    { id : 2 , name :"Humera", marks : [90,67,88]},
+    { id : 3 , name :"Umera", marks : [10,62,54]}
+
+]
+
+
+
+avg=[]
+function calculateAverage(avg[])
+{   
+    
+    sum=0
+    for (i=0;i<this.marks.length;i++)
+    {
+        sum = sum + marks[i]
+        return avg.push[sum/marks.length]
+    }
+}
+console.log(calculateAverage(students))
+
+function getGradeLabel(calculateAverage)
+{   
+    if (calculateAverage >= 90)
+    {
+        return A
+    }
+    else if (calculateAverage >= 80)
+    {
+        return B
+    }
+    else if (calculateAverage >= 70)
+    {
+        return C
+    }
+    else if (calculateAverage >= 30)
+    {
+        return F
+    }
+    else(calculateAverage>100 || calculateAverage<0)
+    {
+        return console.log("Out of range Average!")
+    }
+
+}
+ function formatStudentName(name) 
+{
+    return students.name = students.name.trim(toUppercase(name))
+}
+const createformattedname = formatStudentName(name)
+
+// Arrays and Objects
+function getTopper(students)
+{   highest = 0 
+    for (i in students.marks)
+{
+    const calreduce = students.marks.reduce(mark=>mark + next)
+    if (calreduce>=highest)
+    {
+        highest = calreduce
+    }
+}
+return highest
+const findhighestavg = getTopper()
+}
+function getPassedStudents(students)
+
+{
+    let pass = students.marks.filter(calreduce>=40)
+}
+
+function mergeStudents(students, newOnes)
+{
+    const newobj = {...students,newOnes}
+}
+
+class Student 
+{
+    constructor (name,marks,id)
+    {this.name = name
+    this.marks = marks
+    this.id = id}
+
+    
+    
+}
+
+get average() {
+    
+    let total = this.marks.reduce(marks);
+    return total / this.marks.length;
+  }
+  get grade(getGradeLabel) {
+    
+    
+    return getGradeLabel;
+  }
+ static function Student.compare(a, b)
+
+ {
+    
+ }
